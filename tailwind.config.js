@@ -4,7 +4,17 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        jakartaSansRegular: ["JakarSansRegular"],
+        jakartaSansBold: ["JakarSansBold"],
+        jakartaSansMedium: ["JakarSansMedium"],
+        jakartaSansSemiBold: ["JakarSansSemiBold"],
+      },
+      colors:{
+        "dark-blue": "#512657"
+      }
+    },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
